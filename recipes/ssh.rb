@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: chef-metal
-# Attribute:: default
+# Recipe:: ssh
 #
 # Copyright (C) 2014 Bloomberg L.P.
 #
@@ -16,11 +16,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+include_recipe 'chef-metal::default'
 
-# Set this if you want a specific version of chef-metal.
-default['chef-metal']['version'] = nil
-
-# Set these if you want a specific version of chef-metal drivers.
-%w(docker fog lxc ssh vagrant vsphere).each do |driver|
-  default['chef-metal'][driver]['version'] = nil
+chef_gem 'chef-metal-ssh' do
+  version node['chef-metal']['ssh']['version']
 end
+
+require 'chef_metal_ssh'

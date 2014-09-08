@@ -11,4 +11,4 @@ chef_gem 'chef-metal' do
   version node['chef-metal']['version']
 end
 
-require 'chef-metal'
+require 'chef_metal'

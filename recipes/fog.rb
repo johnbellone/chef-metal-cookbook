@@ -6,6 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+include_recipe 'chef-metal::default'
 
 chef_gem 'chef-metal-fog' do
   version node['chef-metal-fog']['version']

@@ -1,0 +1,7 @@
+name             'chef-metal'
+maintainer       'John Bellone'
+maintainer_email 'jbellone@bloomberg.net'
+license          'All rights reserved'
+description      'Installs/Configures chef-metal'
+long_description 'Installs/Configures chef-metal'
+version          '0.1.0'

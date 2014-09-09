@@ -1,9 +1,9 @@
 # chef-metal-cookbook
 ![Release](http://img.shields.io/github/release/johnbellone/chef-metal-cookbook.svg)
-[![Build Status](http://img.shields.io/travis/johnbellone/chef-metal-cookbook.svg)][5]
-[![Code Coverage](http://img.shields.io/coveralls/johnbellone/chef-metal-cookbook.svg)][6]
+[![Build Status](http://img.shields.io/travis/johnbellone/chef-metal-cookbook.svg)]
+[![Code Coverage](http://img.shields.io/coveralls/johnbellone/chef-metal-cookbook.svg)]
 
-Configure the [Chef Metal gem][1] as a recipe.
+Provides a recipe for configuring the [Chef Metal gem][1] gem.
 
 ## Attributes
 

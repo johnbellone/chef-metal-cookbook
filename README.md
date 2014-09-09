@@ -1,10 +1,9 @@
 # chef-metal-cookbook
+![Release](http://img.shields.io/github/release/johnbellone/chef-metal-cookbook.svg)
+[![Build Status](http://img.shields.io/travis/johnbellone/chef-metal-cookbook.svg)][5]
+[![Code Coverage](http://img.shields.io/coveralls/johnbellone/chef-metal-cookbook.svg)][6]
 
-TODO: Enter the cookbook description here.
-
-## Supported Platforms
-
-TODO: List your supported platforms.
+Configure the [Chef Metal gem][1] as a recipe.
 
 ## Attributes
 
@@ -16,19 +15,17 @@ TODO: List your supported platforms.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['chef-metal']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
+    <td><tt>['chef-metal']['version']</tt></td>
+    <td>String</td>
+    <td>Gem Version</td>
+    <td><tt>nil</tt></td>
   </tr>
 </table>
 
 ## Usage
 
 ### chef-metal::default
-
 Include `chef-metal` in your node's `run_list`:
-
 ```json
 {
   "run_list": [
@@ -37,15 +34,4 @@ Include `chef-metal` in your node's `run_list`:
 }
 ```
 
-## Contributing
-
-1. Fork the repository on Github
-2. Create a named feature branch (i.e. `add-new-recipe`)
-3. Write your change
-4. Write tests for your change (if applicable)
-5. Run the tests, ensuring they all pass
-6. Submit a Pull Request
-
-## License and Authors
-
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+[1]: https://github.com/opscode/chef-metal

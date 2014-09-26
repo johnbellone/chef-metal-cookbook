@@ -1,9 +1,11 @@
 require 'spec_helper'
 
 describe_recipe 'chef-metal::default' do
-  let(:chef_run) do
-    ChefSpec::Runner.new(platform: 'ubuntu', version: '12.04').converge(described_recipe)
-  end
+  subject { ChefSpec::Runner.new(platform: 'ubuntu', version: '12.04') }
 
-  it { expect(chef_run).to install_chef_gem('chef-metal') }
+  context 'with default attributes' do
+    it do
+      expect(subject.converge(described_recipe)).to install_chef_gem('chef-metal')
+    end
+  end
 end

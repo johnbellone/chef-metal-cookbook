@@ -12,7 +12,7 @@ group :test, :integration do
   gem 'chefspec'
   gem 'guard-kitchen'
   gem 'guard-foodcritic'
-  gem 'test-kitchen'
   gem 'kitchen-vagrant'
   gem 'serverspec'
+  gem 'test-kitchen'
 end

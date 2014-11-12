@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: chef-metal
+# Cookbook Name:: chef-provisioning
 # Recipe:: default
 #
 # Copyright (C) 2014 Bloomberg L.P.
@@ -16,8 +16,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-chef_gem 'chef-metal' do
-  version node['chef-metal']['version']
+
+node.set['build-essential']['compile_time'] = true
+
+include_recipe 'build-essential'
+
+chef_gem 'chef-provisioning' do
+  version node['chef-provisioning']['version']
 end
 
-require 'chef_metal'
+require 'chef/provisioning'

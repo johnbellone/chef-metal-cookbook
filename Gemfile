@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'berkshelf'
-gem 'chef-metal'
+gem 'chef-provisioning'
 gem 'rake'
 gem 'rspec'
 gem 'rubocop'

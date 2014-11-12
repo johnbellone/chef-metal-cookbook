@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: chef-metal
+# Cookbook Name:: chef-provisioning
 # Recipe:: ssh
 #
 # Copyright (C) 2014 Bloomberg L.P.
@@ -16,10 +16,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include_recipe 'chef-metal::default'
+include_recipe 'chef-provisioning::default'
 
-chef_gem 'chef-metal-ssh' do
-  version node['chef-metal']['ssh']['version']
+chef_gem 'chef-provisioning-ssh' do
+  version node['chef-provisioning']['ssh']['version']
 end
 
-require 'chef_metal_ssh'
+require 'chef_provisioning_ssh'

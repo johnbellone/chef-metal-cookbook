@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: chef-metal
+# Cookbook Name:: chef-provisioning
 # Attribute:: default
 #
 # Copyright (C) 2014 Bloomberg L.P.
@@ -17,10 +17,10 @@
 # limitations under the License.
 #
 
-# Set this if you want a specific version of chef-metal.
-default['chef-metal']['version'] = nil
+# Set this if you want a specific version of chef-provisioning.
+default['chef-provisioning']['version'] = nil
 
-# Set these if you want a specific version of chef-metal drivers.
+# Set these if you want a specific version of chef-provisioning drivers.
 %w(docker fog lxc ssh vagrant vsphere).each do |driver|
-  default['chef-metal'][driver]['version'] = nil
+  default['chef-provisioning'][driver]['version'] = nil
 end

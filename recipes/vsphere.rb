@@ -18,8 +18,8 @@
 #
 include_recipe 'chef-provisioning::default'
 
-chef_gem 'chef-provisioning-vsphere' do
+chef_gem 'chef-metal-vsphere' do
   version node['chef-provisioning']['vsphere']['version']
 end
 
-require 'chef_provisioning_vsphere'
+require 'chef_metal_vsphere'

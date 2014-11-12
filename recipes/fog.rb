@@ -22,4 +22,4 @@ chef_gem 'chef-provisioning-fog' do
   version node['chef-provisioning']['fog']['version']
 end
 
-require 'chef_provisioning_fog'
+require 'chef/provisioning/fog_driver/driver'

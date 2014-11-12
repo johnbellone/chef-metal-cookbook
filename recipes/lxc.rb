@@ -22,4 +22,4 @@ chef_gem 'chef-provisioning-lxc' do
   version node['chef-provisioning']['lxc']['version']
 end
 
-require 'chef_provisioning_lxc'
+require 'chef/provisioning/lxc_driver/driver'

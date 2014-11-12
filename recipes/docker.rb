@@ -22,4 +22,4 @@ chef_gem 'chef-provisioning-docker' do
   version node['chef-provisioning']['docker']['version']
 end
 
-require 'chef_provisioning_docker'
+require 'chef/provisioning/docker_driver/driver'

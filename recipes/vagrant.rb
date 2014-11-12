@@ -22,4 +22,4 @@ chef_gem 'chef-provisioning-vagrant' do
   version node['chef-provisioning']['vagrant']['version']
 end
 
-require 'chef_provisioning_vagrant'
+require 'chef/provisioning/vagrant_driver/driver'

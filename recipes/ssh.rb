@@ -18,8 +18,8 @@
 #
 include_recipe 'chef-provisioning::default'
 
-chef_gem 'chef-provisioning-ssh' do
+chef_gem 'chef-metal-ssh' do
   version node['chef-provisioning']['ssh']['version']
 end
 
-require 'chef_provisioning_ssh'
+require 'chef_metal_ssh'

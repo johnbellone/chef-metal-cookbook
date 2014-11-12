@@ -21,8 +21,10 @@ node.set['build-essential']['compile_time'] = true
 
 include_recipe 'build-essential'
 
+gem_version = node['chef-provisioning']['version']
+
 chef_gem 'chef-provisioning' do
-  version node['chef-provisioning']['version']
+  version gem_version if gem_version
 end
 
 require 'chef/provisioning'

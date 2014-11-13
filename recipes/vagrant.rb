@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: chef-metal
+# Cookbook Name:: chef-provisioning
 # Recipe:: vagrant
 #
 # Copyright (C) 2014 Bloomberg L.P.
@@ -16,10 +16,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include_recipe 'chef-metal::default'
+include_recipe 'chef-provisioning::default'
 
-chef_gem 'chef-metal-vagrant' do
-  version node['chef-metal']['vagrant']['version']
+chef_gem 'chef-provisioning-vagrant' do
+  version node['chef-provisioning']['vagrant']['version']
 end
 
-require 'chef_metal_vagrant'
+require 'chef/provisioning/vagrant_driver/driver'

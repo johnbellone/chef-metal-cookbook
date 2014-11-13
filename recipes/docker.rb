@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: chef-metal
+# Cookbook Name:: chef-provisioning
 # Recipe:: docker
 #
 # Copyright (C) 2014 Bloomberg L.P.
@@ -16,10 +16,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include_recipe 'chef-metal::default'
+include_recipe 'chef-provisioning::default'
 
-chef_gem 'chef-metal-docker' do
-  version node['chef-metal']['docker']['version']
+chef_gem 'chef-provisioning-docker' do
+  version node['chef-provisioning']['docker']['version']
 end
 
-require 'chef_metal_docker'
+require 'chef/provisioning/docker_driver/driver'

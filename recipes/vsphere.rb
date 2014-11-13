@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: chef-metal
+# Cookbook Name:: chef-provisioning
 # Recipe:: vsphere
 #
 # Copyright (C) 2014 Bloomberg L.P.
@@ -16,10 +16,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include_recipe 'chef-metal::default'
+include_recipe 'chef-provisioning::default'
 
 chef_gem 'chef-metal-vsphere' do
-  version node['chef-metal']['vsphere']['version']
+  version node['chef-provisioning']['vsphere']['version']
 end
 
 require 'chef_metal_vsphere'

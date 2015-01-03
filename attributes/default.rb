@@ -21,6 +21,9 @@
 default['chef-provisioning']['version'] = nil
 
 # Set these if you want a specific version of chef-provisioning drivers.
-%w(docker fog lxc ssh vagrant vsphere).each do |driver|
-  default['chef-provisioning'][driver]['version'] = nil
-end
+default['chef-provisioning']['docker']['version'] = nil
+default['chef-provisioning']['fog']['version'] = nil
+default['chef-provisioning']['lxc']['version'] = nil
+default['chef-provisioning']['ssh']['version'] = nil
+default['chef-provisioning']['vagrant']['version'] = nil
+default['chef-provisioning']['vsphere']['version'] = nil

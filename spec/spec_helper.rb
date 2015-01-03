@@ -1,7 +1,5 @@
 require 'chefspec'
 require 'chefspec/berkshelf'
-require 'chefspec/cacher'
-require 'chefspec/server'
 require 'coveralls'
 
 Coveralls.wear!
@@ -33,5 +31,5 @@ end
 at_exit { ChefSpec::Coverage.report! }
 
 RSpec.shared_context 'recipe tests', type: :recipe do
-  let(:chef_run) { ChefSpec::Runner.new(platform: 'ubuntu', version: '12.04') }
+  let(:chef_run) { ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '12.04').converge(described_recipe) }
 end

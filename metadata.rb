@@ -4,7 +4,7 @@ maintainer_email 'jbellone@bloomberg.net'
 license          'Apache 2.0'
 description      'Provides a recipe for configuring the Chef Provisioning gem.'
 long_description 'Provides a recipe for configuring the Chef Provisioning gem.'
-version          '0.1.1'
+version          '0.1.2'
 
 %w(redhat centos).each do |name|
   supports name, '~> 7.0'

@@ -16,15 +16,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
 node.set['build-essential']['compile_time'] = true
-
-include_recipe 'build-essential'
-
-gem_version = node['chef-provisioning']['version']
+include_recipe 'build-essential::default'
 
 chef_gem 'chef-provisioning' do
-  version gem_version if gem_version
+  version node['chef-provisioning']['version']
 end
 
 require 'chef/provisioning'

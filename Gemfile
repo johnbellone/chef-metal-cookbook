@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 gem 'berkshelf'
 gem 'chef-provisioning'
+gem 'coveralls', require: false
+gem 'foodcritic'
 gem 'rake'
 gem 'rspec'
 gem 'rubocop'
-gem 'foodcritic'
+gem 'stove'
 gem 'tailor'
-gem 'coveralls', require: false
 
 group :test, :integration do
   gem 'chefspec'

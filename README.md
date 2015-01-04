@@ -34,7 +34,15 @@ Include `chef-provisioning` in your node's `run_list`:
 }
 ```
 
+## Authors
+Created and maintained by [John Bellone][5] [@johnbellone][6]
+[![endorse](http://api.coderwall.com/johnbellone/endorsecount.png)](http://coderwall.com/johnbellone) and a growing community of
+[contributors][7].
+
 [1]: https://github.com/opscode/chef-provisioning
-[2]: https://github.com/johnbellone/chef-metal-cookbook/graphs/contributors
-[3]: http://travis-ci.org/johnbellone/chef-metal-cookbook
-[4]: https://coveralls.io/r/johnbellone/chef-metal-cookbook
+[2]: https://github.com/johnbellone/chef-provisioning-cookbook/graphs/contributors
+[3]: http://travis-ci.org/johnbellone/chef-provisioning-cookbook
+[4]: https://coveralls.io/r/johnbellone/chef-provisioning-cookbook
+[5]: https://github.com/johnbellone
+[6]: https://twitter.com/johnbellone
+[7]: https://github.com/johnbellone/chef-provisioning-cookbook/graphs/contributors
